@@ -2,3 +2,18 @@
     margin-right: 2rem;
     width: 2rem;
 }
+@media (max-width: 575px) {
+    div{
+        display: inline-flex;
+        justify-content: middle;
+        /* margin-right: 10%; */
+        margin-left: 10%;
+        /* padding-left: 0rem; */
+        padding-bottom: 30px;
+        /* margin-top: -60px; */
+    }
+    .img-social{
+        width: 40%;
+    }
+    
+}
