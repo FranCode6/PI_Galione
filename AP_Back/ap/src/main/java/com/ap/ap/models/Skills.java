@@ -12,17 +12,16 @@ public class Skills {
     private Long idSkill;
     private String nombreSkill;
     private String fotoSkill;
-    private int procentaje;
+    private int porcentaje;
 
     public Skills() {
-
     }
 
-    public Skills(Long idSkill, String nombreSkill, String fotoSkill, int procentaje) {
+    public Skills(Long idSkill, String nombreSkill, String fotoSkill, int porcentaje) {
         this.idSkill = idSkill;
         this.nombreSkill = nombreSkill;
         this.fotoSkill = fotoSkill;
-        this.procentaje = procentaje;
+        this.porcentaje = porcentaje;
     }
 
     public Long getIdSkill() {
@@ -49,11 +48,11 @@ public class Skills {
         this.fotoSkill = fotoSkill;
     }
 
-    public int getProcentaje() {
-        return procentaje;
+    public int getPorcentaje() {
+        return porcentaje;
     }
 
-    public void setProcentaje(int procentaje) {
-        this.procentaje = procentaje;
+    public void setPorcentaje(int porcentaje) {
+        this.porcentaje = porcentaje;
     }
 }

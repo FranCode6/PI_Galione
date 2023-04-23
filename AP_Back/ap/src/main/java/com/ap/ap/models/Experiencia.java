@@ -2,7 +2,7 @@ package com.ap.ap.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -16,8 +16,8 @@ public class Experiencia {
     private String imagenExp;
 
     public Experiencia() {
-
     }
+
     public Experiencia(Long idExp, String tituloExp, int fechaExp, String descExp, String imagenExp) {
         this.idExp = idExp;
         this.tituloExp = tituloExp;

@@ -1,11 +1,11 @@
 package com.ap.ap.models;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Table(name = "Usuario")
 public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,25 +14,25 @@ public class Usuario implements Serializable {
     private String nombre;
     private String apellido;
     private String titulo;
-    private String descripcion;
+    private String description;
     private String fotoPerfil;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
     private List<Educacion> educacionList;
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idskill")
-    private List<Skills> skillsList;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idSKill")
+    private List<Skills> skillsListList;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idExp")
     private List<Experiencia> experienciaList;
 
     public Usuario() {
     }
 
-    public Usuario(Long id, String nombre, String apellido, String titulo, String descripcion, String fotoPerfil) {
+    public Usuario(Long id, String nombre, String apellido, String titulo, String description, String fotoPerfil) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
-        this.descripcion = descripcion;
+        this.description = description;
         this.fotoPerfil = fotoPerfil;
     }
 
@@ -68,12 +68,12 @@ public class Usuario implements Serializable {
         this.titulo = titulo;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getFotoPerfil() {
@@ -84,3 +84,4 @@ public class Usuario implements Serializable {
         this.fotoPerfil = fotoPerfil;
     }
 }
+

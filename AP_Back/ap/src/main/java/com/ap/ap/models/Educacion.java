@@ -2,7 +2,7 @@ package com.ap.ap.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -16,7 +16,6 @@ public class Educacion {
     private String imagenEdu;
 
     public Educacion() {
-
     }
 
     public Educacion(Long idEdu, String tituloEdu, int fechaEdu, String descEdu, String imagenEdu) {
