@@ -25,11 +25,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "PI_Galione/node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.css"
             ],
             "scripts": [
-              "PI_Galione/node_modules/bootstrap/dist/js/bootstrap.js"
+
             ]
           },
           "configurations": {
@@ -44,6 +43,12 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "PI_Galione/src/environments/environment.ts",
+                  "with": "PI_Galione/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
